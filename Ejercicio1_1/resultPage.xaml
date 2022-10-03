@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Creado por Antonio Izaguirre (Antoniza) (202010020281)-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_1.resultPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   BackgroundColor="#134074"
+                   CornerRadius="15">
+                <StackLayout>
+                    <Label Text="El resultado es:"
+                           TextColor="#fff"
+                           FontSize="35"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="CenterAndExpand" />
+                    
+                    <Label Text="Resultado"
+                           TextColor="#fff"
+                           FontSize="28"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="CenterAndExpand"
+                           x:Name="txtResult"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

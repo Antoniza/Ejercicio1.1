@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Creado por Antonio Izaguirre (Antoniza) (202010020281)-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_1.MainPage">
+
+    <StackLayout Padding="20,50">
+        <Label Text="Ejercicio 1.1"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="25"
+               TextColor="#000"
+               TextDecorations="Underline"/>
+        <!--#region ENTRYS-->
+        <Frame CornerRadius="15" BackgroundColor="#134074">
+            <StackLayout>
+                <Entry Placeholder="Primer Numero"
+                       PlaceholderColor="#fff"
+                       Keyboard="Numeric"
+                       x:Name="num1"
+                       TextColor="#fff" />
+                <Entry Placeholder="Segundo Numero"
+                       PlaceholderColor="#fff"
+                       Keyboard="Numeric"
+                       x:Name="num2"
+                       TextColor="#fff" />
+            </StackLayout>
+        </Frame>
+        <!--#endregion-->
+
+        <!--#region BUTTONS-->
+        <Frame CornerRadius="15" BackgroundColor="#134074">
+            <StackLayout>
+                <Button Text="Sumar" 
+                        FontAttributes="Bold"
+                        Padding="0,15"
+                        CornerRadius="15"
+                        BackgroundColor="#0F7C00"
+                        TextColor="#000"
+                        x:Name="btnPlus"
+                        Clicked="btnAdd_Clicked"/>
+
+                <Button Text="Restar" 
+                        FontAttributes="Bold"
+                        Padding="0,15"
+                        CornerRadius="15"
+                        BackgroundColor="#0F7C00"
+                        TextColor="#000"
+                        x:Name="btnSub"
+                        Clicked="btnSub_Clicked"/>
+
+                <Button Text="Multiplicar" 
+                        FontAttributes="Bold"
+                        Padding="0,15"
+                        CornerRadius="15"
+                        BackgroundColor="#0F7C00"
+                        TextColor="#000"
+                        x:Name="btnMul"
+                        Clicked="btnMul_Clicked"/>
+
+                <Button Text="Dividir" 
+                        FontAttributes="Bold"
+                        Padding="0,15"
+                        CornerRadius="15"
+                        BackgroundColor="#0F7C00"
+                        TextColor="#000"
+                        x:Name="btnDiv"
+                        Clicked="btnDiv_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <!--#endregion-->
+    </StackLayout>
+
+</ContentPage>
